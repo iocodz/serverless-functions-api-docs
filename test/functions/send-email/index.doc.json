@@ -1,0 +1,6 @@
+{
+    "name": "Send Email Enpoint",
+    "path": "/send-email",
+    "method": "GET",
+    "description": "Send Email"
+}
