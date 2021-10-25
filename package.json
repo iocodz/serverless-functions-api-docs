@@ -2,7 +2,7 @@
   "name": "netlify-functions-api-docs",
   "version": "1.0.0",
   "description": "",
-  "repository": "netlify-functions-api-docs",
+  "repository": "https://github.com/raulcr98/netlify-functions-api-docs.git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
