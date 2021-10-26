@@ -1,6 +1,6 @@
 {
   "name": "netlify-functions-api-docs",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "",
   "repository": "https://github.com/raulcr98/netlify-functions-api-docs.git",
   "main": "index.js",
