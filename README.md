@@ -63,14 +63,14 @@ To generate the documentation we simply execute `yarn run createdoc` or `npm run
 
 ## 👏 Contributing
 
-:octocat: Pull requests and 🌟 stars are always welcome.
+Pull requests and 🌟 stars are always welcome.
 For major changes, please open an issue first to discuss what you would like to change.
 
 ## 📩 Contact
 
-📧 rahulrcr98@gmail.com
+rahulrcr98@gmail.com
 
-🐦 Twitter @iamraul_net
+Twitter @iamraul_net
 
-💼 Linkedin @iamraul
+Linkedin @iamraul
 
