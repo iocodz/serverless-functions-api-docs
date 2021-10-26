@@ -1,3 +1,4 @@
+const saveFile = require('fs').writeFileSync;
 const fs = require('fs')
 
 exports.createDocumentation = function(endpoints, config) {
@@ -61,4 +62,43 @@ exports.createDocumentation = function(endpoints, config) {
             console.log('File is created successfully.');
     });
     // console.log(writeText)
+}
+
+exports.initFiles = function() {
+    try {
+        fs.readFileSync('../../doc_config.js')
+    } catch (error) {
+        fs.writeFileSync('../../doc_config.js', `
+        const netlifydoc = require('netlify-functions-api-docs/index');
+
+        const config = {
+            basedir: "functions",
+            info: {
+                sitename: "SITE NAME",
+                logourl: "SITELOGO URL",
+                sitedescription: "SITE DESCRIPTION"
+            }
+        }
+
+        netlifydoc.createDoc(config);
+        `, function (err) {
+            if (err) throw err;
+                console.log('Configuration file is created successfully.');
+        });
+    }
+}
+
+exports.updatePackage = function() {
+
+    const pkgJsonPath = require.main.paths[0].split('node_modules')[0] + 'package.json';
+
+    const json = require(pkgJsonPath);
+
+    if (!json.hasOwnProperty('scripts')) {
+        json.scripts = {};
+    }
+
+    json.scripts['createdoc'] = 'node doc_config.js';
+
+    saveFile(pkgJsonPath, JSON.stringify(json, null, 2));
 }

@@ -1,11 +1,12 @@
 {
   "name": "netlify-functions-api-docs",
-  "version": "1.0.4",
+  "version": "1.0.9",
   "description": "",
   "repository": "https://github.com/raulcr98/netlify-functions-api-docs.git",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "",
+    "postinstall": "node ./postinstall.js"
   },
   "author": "iamraul",
   "license": "ISC",
