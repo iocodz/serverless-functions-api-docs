@@ -1,8 +1,8 @@
 {
-  "name": "netlify-functions-api-docs",
+  "name": "serverless-functions-api-docs",
   "version": "1.1.0",
   "description": "",
-  "repository": "https://github.com/raulcr98/netlify-functions-api-docs.git",
+  "repository": "https://github.com/raulcr98/serverless-functions-api-docs.git",
   "main": "index.js",
   "scripts": {
     "test": "",

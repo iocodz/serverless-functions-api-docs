@@ -1,12 +1,12 @@
-# netlify-functions-api-docs
+# serverless-functions-api-docs
 
 Create the documentation of your Netlify functions automatically.
 
 ## 🚀 Getting Started
 
 ```
-yarn add netlify-functions-api-docs
-npm install netlify-functions-api-docs
+yarn add serverless-functions-api-docs
+npm install serverless-functions-api-docs
 ```
 
 ## 👩‍💻 Usage
@@ -16,10 +16,11 @@ npm install netlify-functions-api-docs
 Edit the file `doc_config.js` with the basic information of your site or organization.
 
 ```javascript
-const netlifydoc = require('netlify-functions-api-docs/index');
+const serverlessFunct = require('serverless-functions-api-docs/index');
 
 const config = {
     basedir: "functions",
+    outputfile: "index.html",
     info: {
         sitename: "MY SITE / ORGANIZATION",
         logourl: "MY LOGO URL",
@@ -27,7 +28,7 @@ const config = {
     }
 }
 
-netlifydoc.createDoc(config);
+serverlessFunct.createDoc(config);
 ```
 
 ### In the project
@@ -49,12 +50,21 @@ project
 Each file must have the following structure:
 
 ```
-{
-    "name": "ENDPOINT NAME",
-    "path": "/endpoint-url",
-    "method": "GET",
-    "description": "SOME DESCRIPTION"
-}
+[
+    {
+        "name": "ENDPOINT NAME",
+        "path": "/endpoint-url",
+        "method": "GET",
+        "description": "SOME DESCRIPTION",
+        "fields": [
+            {
+                "name": "name",
+                "type": "String",
+                "required": "true"
+            }
+        ]
+    }
+]
 ```
 
 ### Generate the docs
