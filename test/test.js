@@ -1,4 +1,4 @@
-const nfad = require('../index');
+const serverlessFunct = require('../index');
 
 const config = {
     basedir: "functions",
@@ -10,4 +10,4 @@ const config = {
     }
 }
 
-nfad.createDoc(config);
+serverlessFunct.createDoc(config);
