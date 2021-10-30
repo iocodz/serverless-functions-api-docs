@@ -1,6 +1,15 @@
-{
-    "name": "Send Email Enpoint",
-    "path": "/send-email",
-    "method": "GET",
-    "description": "Send Email"
-}
+[
+    {
+        "name": "Send Email Enpoint",
+        "path": "/send-email",
+        "method": "GET",
+        "description": "Send Email",
+        "fields": [
+            {
+                "name": "name",
+                "type": "String",
+                "required": "true"
+            }
+        ]
+    }
+]
