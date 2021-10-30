@@ -1,6 +1,6 @@
 # serverless-functions-api-docs
 
-Create the documentation of your Netlify functions automatically.
+Create the documentation of your serverless functions automatically.
 
 ## 🚀 Getting Started
 
