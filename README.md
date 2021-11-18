@@ -4,6 +4,11 @@
 
 Create the documentation of your serverless functions automatically.
 
+* Netlify Functions
+* Vercel Functions
+* Next.js Functions
+* Nuxt.js Functions
+
 ## 🚀 Getting Started
 
 ```
@@ -16,6 +21,8 @@ npm install serverless-functions-api-docs
 ### Personalize your docs site
 
 Edit the file `doc_config.js` with the basic information of your site or organization.
+
+For **Next** and **Nuxt** it is recommended to set the `outputfile` path to **public** and **static** folders.
 
 ```javascript
 const serverlessFunct = require('serverless-functions-api-docs/index');
