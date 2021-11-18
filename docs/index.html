@@ -16,9 +16,9 @@
             <header>
                 <h1>MY API</h1>
     
-                <img src="https://jesamconsulting.com/assets/logo_black.png" alt="Logo" width="100%" />
+                <img src="https://www.iamraul.net/avatar.png" alt="Logo" width="100%" />
     
-                <p>Documentación de la API de JESAM</p>
+                <p>API Documentation</p>
     
             </header>
 
@@ -28,9 +28,9 @@
             <h2 id="header-2">Send Email Enpoint</h2>
 
             <blockquote>
-                <p>GET <b>/send-email</b></p>
+                <p>POST <b>/send-email</b></p>
 
-                <p>Send Email</p>
+                <p>Endpoint to sent emails from contact@iamraul.net to selected email address.</p>
             </blockquote>
 
             <table>
@@ -43,10 +43,20 @@
                 </thead>
                 <tbody>
                     <tr>
-                    <td style="text-align: left">name</td>
-                    <td style="text-align: left">String</td>
-                    <td style="text-align: left">true</td>
-                </tr>
+                        <td style="text-align: left">to</td>
+                        <td style="text-align: left">String</td>
+                        <td style="text-align: left">true</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">subject</td>
+                        <td style="text-align: left">String</td>
+                        <td style="text-align: left">true</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">body</td>
+                        <td style="text-align: left">String</td>
+                        <td style="text-align: left">true</td>
+                    </tr>
                 </tbody>
                 </table>
 
