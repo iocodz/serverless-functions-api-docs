@@ -5,7 +5,6 @@
   "repository": "https://github.com/raulcr98/serverless-functions-api-docs.git",
   "main": "index.js",
   "scripts": {
-    "test": "",
     "postinstall": "node ./postinstall.js"
   },
   "author": "iamraul",
