@@ -73,6 +73,12 @@ Each file must have the following structure:
 
 To generate the documentation we simply execute `yarn run createdoc` or `npm run createdoc`.
 
+## Final Result
+
+Checkout at https://raulcr98.github.io/serverless-functions-api-docs/
+
+![image](https://user-images.githubusercontent.com/32805147/142460481-ab0d5a76-1a51-48c3-b663-0ff0f49ad8fe.png)
+
 ## 👏 Contributing
 
 Pull requests and 🌟 stars are always welcome.
