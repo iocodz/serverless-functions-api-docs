@@ -1,6 +1,7 @@
 # serverless-functions-api-docs
 
 [![npm version](https://badge.fury.io/js/serverless-functions-api-docs.svg)](https://badge.fury.io/js/serverless-functions-api-docs)
+![npm downloads](https://img.shields.io/npm/dm/serverless-functions-api-docs.svg)
 
 Create the documentation of your serverless functions automatically.
 
