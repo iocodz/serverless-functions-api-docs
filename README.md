@@ -7,8 +7,6 @@ Create the documentation of your serverless functions automatically.
 
 * Netlify Functions
 * Vercel Functions
-* Next.js Functions
-* Nuxt.js Functions
 
 ## 🚀 Getting Started
 
